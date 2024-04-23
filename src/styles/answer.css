@@ -1,0 +1,14 @@
+.answer p{
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+    width:80%;
+    font-family:Noto Sans;
+    font-size: 1.25rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .answer {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,120 @@
+.chat{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100%;
+    gap:1rem;
+    max-height: 70vh;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.chat ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.chat ul li{
+    border:1px solid white;
+    border-radius: 10px;
+    width:100%;
+}
+
+
+/* For WebKit (Chrome, Safari, etc.) */
+html::-webkit-scrollbar,.chat::-webkit-scrollbar {
+    width: 1vw; /* width of the scrollbar */
+}
+
+html::-webkit-scrollbar-thumb,.chat::-webkit-scrollbar-thumb{
+    background-color: #777;
+}
+
+html::-webkit-scrollbar-track,.chat::-webkit-scrollbar-track {
+    background: #555; /* color of the track */
+}
+
+.chat .question-answer .question h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.chat .question-answer{
+    /* border:1px solid white; */
+    border-radius: 10px;
+    padding: 5px;
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:5vh;
+}
+
+
+.chat .question img{
+    width: 40px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1rem;
+}
+
+.chat .question .image{
+    display: flex;
+    align-items: center;
+}
+
+.chat .question .image p{
+    font-size: 1.25rem;
+}
+
+.chat .question h3{
+    margin-left: 3.5rem;
+}
+
+.chat .chatgpt{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:1vh;
+}
+
+.chat .chatgpt img{
+    width: 40px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 1rem;
+}
+
+.chat .chatgpt .image{
+    display: flex;
+    align-items: center;
+}
+
+.chat .chatgpt .image p{
+    font-size: 1.25rem;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .chat .question-answer .question h3{
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .chat .chatgpt{
+        width:400px;
+    }
+}

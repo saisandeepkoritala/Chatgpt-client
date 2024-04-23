@@ -1,0 +1,41 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    padding: 5px 25px;
+}
+
+.hero img{
+    width:50px;
+}
+
+.hero .query{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+}
+
+.hero .query>p{
+    border:1px solid white;
+    border-radius: 10px;
+    padding: 20px 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .query p span{
+    color:rgb(150, 147, 147);
+}
+
+@media only screen and (max-width: 600px) {
+    /* hero.css */
+        .query p:nth-last-child(-n+2) {
+            display: none;
+        }
+
+}

@@ -1,0 +1,27 @@
+.history{
+    margin-top: 5vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width:100%;
+}
+
+.history .history_question{
+    padding: 5px;
+    width:100%;
+}
+
+.history .history_question p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    overflow: hidden;
+    padding: 25px 5px;
+    box-shadow: 1px 1px 5px white,-1px -1px 5px white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+}
